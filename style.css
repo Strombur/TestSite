@@ -1,0 +1,114 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    width: 100%;
+
+    display: table;
+    text-align: center;
+
+    background-color: #84c6ff;
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 30px;
+}
+
+.header p {
+    vertical-align: middle;
+}
+
+
+.btn {
+    margin:50px 0;
+    width: 30%;
+    height: 80px;
+
+    position: relative;
+    display: inline-block;
+    float:left;
+
+    border: solid 0;
+    background-color: white;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 200;
+
+
+}
+
+.btnAll {
+    width: 10%;
+}
+
+#btnAdd {
+    width: 10%;
+}
+
+.btn:hover {
+    background: #d2f7ff
+}
+
+.btn:focus {
+    outline: 0;
+    background-color: #a6efff;
+    font-weight: 300;
+}
+
+.table {
+    width: 100%;
+    border: 1px solid;
+
+    border-spacing: 0;
+    border-collapse:collapse;
+
+}
+
+
+th {
+    background-color: #d6f8ff;
+}
+
+
+th,
+td {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+
+    border: 1px solid;
+    margin: 0;
+    padding: 10px 20px;
+}
+
+#divTable {
+    border: 1px solid grey;
+    max-height: 250px;
+    overflow:auto;
+}
+
+.img {
+
+    margin: 50px 0 50px 50px;
+    max-width: 33%;
+    max-height: 250px;
+
+    border: 0;
+    margin-right: 50px;
+    display: inline-block;
+}
+
+.tableInfo {
+    margin: 50px;
+    max-width: 40%;
+    border-spacing: 0;
+    border-collapse:collapse;
+    display: inline-block;
+
+
+}
+
+
+
+

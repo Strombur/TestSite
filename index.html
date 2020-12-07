@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Тестовый сайт</title>
+</head>
+<body>
+
+     <div class="header"><p>Тестовое задание</p></div>
+
+    <button class="btn btnIphone" onmousedown="iphoneList()">Iphone</button>
+    <button class="btn btnIpad" onmousedown="ipadList()">Ipad</button>
+    <button class="btn btnMacBook" onmousedown="macBookList()">MacBook</button>
+    <button class="btn btnAll" onmousedown="allList()">All</button>
+    <button class="btn btnAdd" onmousedown="showAddArea()">Add</button>
+    
+    <div id="inputArea">
+        <select id="inputCategory" name="category">
+            <option disabled selected value="category">Категория</option>
+            <option value="IPhone">IPhone</option>
+            <option value="IPad">IPad</option>
+            <option value="MacBook">MacBook</option>
+        </select>
+        <p><input id="inputModel" class="inputAdd" placeholder="Модель"> Модель</p>
+        <p><input id="inputColor" class="inputAdd" placeholder="Цвет"> Цвет</p>
+        <p><input id="inputMemory" class="inputAdd" placeholder="Объём памяти"> Объём памяти(Gb)</p>
+        <p><input id="inputCamera" class="inputAdd" placeholder="Камера"> Камера</p>
+        <p><input id="inputSize" class="inputAdd" placeholder="Диагональ"> Диагональ(")</p>
+        <p><input id="inputWight" class="inputAdd" placeholder="Вес (г)"> Вес(г)</p>
+        <button onclick="checkAdd()">Добавить</button>
+        <button onclick="clearPlace()">Очистить</button>
+            
+    </div>
+    
+    <div id="divTable">
+
+        <table class="table" id="tableList">
+
+            <tr>
+                <th>ID</th>
+                <th>Наименование</th>
+                <th>Цвет</th>
+                <th>Объём памяти</th>
+            </tr>
+
+        </table>
+    </div>
+
+    <div id="blockInfo">
+
+       <table class="tableInfo">
+           <tr>
+               <th>Модель</th>
+               <th id="infoModel"></th>
+           </tr>
+           <tr>
+               <th>Класс</th>
+               <th id="infoClass"></th>
+           </tr>
+           <tr>
+               <th>Диагональ</th>
+               <th id="infoSize"></th>
+           </tr>
+           <tr>
+               <th>Встроеная память</th>
+               <th id="infoMemory"></th>
+           </tr>
+           <tr>
+               <th>Камера</th>
+               <th id="infoCamera"></th>
+           </tr>
+           <tr>
+               <th>Цвет</th>
+               <th id="infoColor"></th>
+           </tr>
+            <tr>
+               <th>Вес</th>
+               <th id="infoWight"></th>
+           </tr>
+            
+       </table>
+        <img id="image" src="" class="img" alt="">
+
+    </div>
+    
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
